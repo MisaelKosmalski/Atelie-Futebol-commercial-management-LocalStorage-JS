@@ -1,0 +1,219 @@
+/* -------------------------------------- list product ---------------------------------------------- */
+
+.list-home-product{
+    margin-left: 1rem;
+    
+    background-color: #fff;
+
+    border-top: 5px solid rgb(109, 107, 107);
+    border-bottom: 3px solid rgb(109, 107, 107);
+    border-radius: 1%;
+
+    overflow-y: auto;
+    width: 77%;
+    height: 79vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.list-home-product h3{
+    width: 100%;
+    height: 1rem;
+
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    font-weight: 600;
+    color: rgb(109, 107, 107);
+}
+
+#table-list-product{
+    display: flex;
+    flex-direction: column;
+
+    font-size: 0.9rem;
+    border-collapse: collapse;
+
+    margin-left: 1rem;
+    width: 96%;
+}
+
+#table-list-product th{
+    width: 100%;
+    height: 2.6rem;
+    border-bottom: 1px solid gray;
+    text-align: start;
+    font-size: small;
+}
+
+#table-list-product td{
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    overflow-x: hidden;
+
+    padding-top: 0.3rem;
+    height: 1.8rem;
+    border-bottom: 1px solid rgb(225, 223, 223);
+    text-align: left;
+}
+
+#table-list-product .quantity-list,
+#table-list-product .price-buy-list,
+#table-list-product .price-list,
+#table-list-product .price-buy-th,
+#table-list-product .price-th{
+    text-align: center;
+}
+
+
+#table-list-product tr {
+    display: flex;
+    flex-direction: row;
+    text-wrap: nowrap;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#table-list-product .name-th,
+#table-list-product .brand-th,
+#table-list-product .descript-th,
+#table-list-product .quantity-th,
+#table-list-product .action-th{
+    padding-top: 1rem;
+}
+
+#table-list-product .name-th, 
+#table-list-product .name-list{
+    max-width: 18%;
+    min-width: 18%;
+}
+
+#table-list-product .brand-th, 
+#table-list-product .brand-list{
+    padding-left: 0.6rem;
+    max-width: 19%;
+    min-width: 19%;
+}
+
+#table-list-product .descript-th, 
+#table-list-product .descript-list {
+    padding-left: 0.6rem;
+    max-width: 19%;
+    min-width: 19%;
+}
+
+#table-list-product .price-buy-th, 
+#table-list-product .price-buy-list{
+    padding-left: 0.6rem;
+    max-width: 12%;
+    min-width: 12%;
+}
+
+#table-list-product .price-th, 
+#table-list-product .price-list{
+    padding-left: 0.6rem;
+    max-width: 10%;
+    min-width: 10%;
+}
+
+#table-list-product .quantity-th, 
+#table-list-product .quantity-list {
+    padding-left: 0.6rem;
+    max-width: 10%;
+    min-width: 10%;
+}
+
+#table-list-product .action-th, 
+#table-list-product .btns-list {
+    padding-left: 0.6rem;
+    max-width: 11%;
+    min-width: 11%;
+}
+
+/* -------------------------------------- list product close ---------------------------------------------- */
+
+.product-sucess-box-create, .product-sucess-box-update{
+    margin-left: 0.5rem;
+    margin-right: 1%;
+    margin-bottom: 0.5rem;
+
+    height: 77vh;
+    width: 23%;
+    background-color: #fff;
+
+    border-bottom: 3px solid rgb(109, 107, 107);
+    border-radius: 1%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.product-sucess-box-create{
+    border-top: 5px solid #00a65a;
+}
+
+.product-sucess-box-update{
+    border-top: 5px solid #3779ec;
+}
+
+.product-sucess-box-create h3, .product-sucess-box-update h3{
+    width: 100%;
+    height: 1rem;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.7rem;
+    font-weight: 600;
+    color: rgb(109, 107, 107);
+}
+
+#input-label-name, 
+#input-label-brand, 
+#input-label-descript,
+#input-label-price-buy,
+#input-label-price,
+#input-label-quantity{
+    width: 90%;
+    color: #2e2e2e;
+    border: solid 1px #b9a4f7 ;
+    border-radius: 0px;
+    outline: none;
+    font-size: 0.9rem;
+    margin-right: 1%;
+}
+
+.form-control-product{
+    height: 1.7rem;
+    width: 90%;
+    padding-left: 0.5rem;
+    margin-top: 0.1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form-group-product{
+    margin-right: 1%;
+    margin-left: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.product-sucess-box-create label, .product-sucess-box-update label{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+
+
+/* -------------------------------------- form product ----------------------------------------------------*/
+
+/* --------------------------------------- menu product - close ----------------------------------------*/

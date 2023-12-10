@@ -1,0 +1,1 @@
+let productController = new ProductController("form-user-create", "form-user-update", "table-list-product");

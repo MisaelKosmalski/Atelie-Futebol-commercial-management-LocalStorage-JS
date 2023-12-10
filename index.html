@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/client.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>treino-display</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div class="leftHeader">
+                <div class="miniLogo">
+                    <img src="assets/img/logo.jpg">
+                </div>
+            </div>
+
+            <div class="rightHeader">
+                <div class="logo">
+                    <img src="assets/img/logo2.png">
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="bodying">
+
+            <div class="leftMenu">
+
+                <div class="dataEmployee">
+
+                    <div class="nameEmployee">Rafael Carlos</div>
+                    <div class="chargeEmployee">Gerente</div>
+
+                </div>
+
+                <div class="menuWord">
+                    <h3>MENU</h3>
+                </div>
+
+                <div class="group-buttons-left-menu">
+
+                    <hr class="mini-left-menu-hr">
+    
+                    <div class="menu-button-left-menu">
+                        <button class="buttons-left-menu">Produtos</button>
+                    </div>
+    
+                    <div class="menu-button-left-menu">
+                        <button class="buttons-left-menu">Clientes</button>
+                    </div>
+
+                    <div class="menu-button-left-menu">
+                        <button class="buttons-left-menu">Comandas</button>
+                    </div>
+    
+                    <div class="menu-button-left-menu">
+                        <button class="buttons-left-menu">Financeiro</button>
+                    </div>
+    
+                    <div class="menu-button-left-menu">
+                        <button class="buttons-left-menu">Usuários</button>
+                    </div>
+    
+                    <hr class="mini-left-menu-hr">
+    
+                </div>
+
+            </div>
+
+            <!-- home - Product -->
+
+            <div class="productMenu" style="display: block;">
+
+                <div class="headerHome">
+                    <div class="header-home-title">Produtos</div>
+                    <div class="header-home-subtitle">Gerenciamento de Produtos</div>
+                </div>
+
+                <div class="bodyTable">
+                    <div class="list-home-product">
+                        <h3>Lista de Produtos</h3>
+                        <table id="table-list-product">
+
+                            <tr>
+                                    <th class="name-th">Nome</th>
+                                    <th class="brand-th">Distribuidora</th>
+                                    <th class="descript-th">Descrição</th>
+                                    <th class="price-buy-th">Preço de<br>Compra (R$)</th>
+                                    <th class="price-th">Preço<br>Un. (R$)</th>
+                                    <th class="quantity-th">Quantidade</th>
+                                    <th class="action-th">Ações</th>
+                            </tr>
+
+                            <tbody id="table-products">  
+                                                        
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <form role="form" class="product-sucess-box-create" id="form-user-create" >
+                        <h3 class="title-box-sucess">Novo Produto</h3>
+                        
+                        <div class="form-group-product">
+                            
+                                <label for="input-label-name">Nome</label>
+                                <input type="text" required class="form-control-product" id="input-label-name" placeholder="Digite o nome do produto" name="name">
+                                <label for="input-label-brand">Distribuidora</label>
+                                <input type="text" required class="form-control-product" id="input-label-brand" placeholder="Digite o nome da distribuidora" name="brand">
+                                <label for="input-label-descript">Descrição</label>
+                                <input type="text" required class="form-control-product" id="input-label-descript" placeholder="Digite a descrição" name="descript">
+                                <label for="input-label-price-buy">Preço de compra em R$</label>
+                                <input type="number" step="0.01" required class="form-control-product" id="input-label-price-buy" placeholder="Informe o valor de compra" name="buyPrice">
+                                <label for="input-label-price">Preço de venda em R$</label>
+                                <input type="number" step="0.01" required class="form-control-product" id="input-label-price" placeholder="Informe o valor de venda" name="price">
+                                <label for="input-label-quantity">Quantidade</label>
+                                <input type="number" required class="form-control-product" id="input-label-quantity" placeholder="Informe a quatindade" name="quantity">
+                                <button type="submit" class="btn-save-form">Salvar</button>
+                            
+                        </div>
+
+                    </form>
+
+                    <form role="form" class="product-sucess-box-update" id="form-user-update" style="display: none;">
+                        <h3 class="title-box-sucess">Atualizar Produto</h3>
+                        
+                        <div class="form-group-product">
+                            
+                            <label for="input-label-name">Nome</label>
+                            <input type="text" required class="form-control-product" id="input-label-name" placeholder="Digite o nome do produto" name="name">
+                            <label for="input-label-brand">Distribuidora</label>
+                            <input type="text" required class="form-control-product" id="input-label-brand" placeholder="Digite o nome da distribuidora" name="brand">
+                            <label for="input-label-descript">Descrição</label>
+                            <input type="text" required class="form-control-product" id="input-label-descript" placeholder="Digite a descrição" name="descript">
+                            <label for="input-label-price-buy">Preço de compra em R$</label>
+                            <input type="number" step="0.01" required class="form-control-product" id="input-label-price-buy" placeholder="Informe o valor de compra" name="buyPrice">
+                            <label for="input-label-price">Preço de venda em R$</label>
+                            <input type="number" step="0.01" required class="form-control-product" id="input-label-price" placeholder="Informe o valor de venda" name="price">
+                            <label for="input-label-quantity">Quantidade</label>
+                            <input type="number" required class="form-control-product" id="input-label-quantity" placeholder="Informe a quatindade" name="quantity">
+                                
+                                <div class="btns">
+                                    <button type="submit" class="btn-update-form">Salvar</button>
+                                    <button class="btn-cancel">Cancelar</button>
+                                </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- home - Product - close -->
+
+            <!-- home - Client -->
+
+            <div class="clientMenu" style="display: none;">
+
+                <div class="headerHome">
+                    <div class="header-home-title">Produtos</div>
+                    <div class="header-home-subtitle">Gerenciamento de Produtos</div>
+                </div>
+
+                <div class="bodyTable">
+
+                    <div class="list-home">
+    
+                        <h3>Lista de Clientes</h3>
+                        <table id="table-list-client">
+    
+                            <tr>
+                                <th class="name-th">Nome</th>
+                                <th class="cpf-th">CPF</th>
+                                <th class="number-th">Número</th>
+                                <th class="action-th">Ações</th>
+                            </tr>
+
+                            <tbody id="table-clients">  
+                                                    
+                            </tbody>
+    
+                        </table>
+    
+                    </div>
+    
+                </div>
+        
+            </div>
+
+            <!-- home - Client - close -->
+
+        </div>
+
+    </div> 
+
+</body>
+
+    <script src="models/Product.js"></script>
+    <script src="controllers/ProductController.js"></script>
+    <script src="index.js"></script>
+</html>
